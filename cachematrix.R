@@ -1,12 +1,13 @@
 
-## The file contains two functions that can be used to calculate the inverse
+## This file contains two functions that can be used to calculate the inverse
 ## of a matrix. Although the inverse of matrix x can be calculated using solve(x),
-## these functions allow the inverse value to be cached, rather than recalcuated
-## every time.
+## these functions allow the inverse value to be cached, rather than having to be
+## recalcuated every time.
 
-## The use case for these functions is for tight loops, where the value of inverse
-## is calculated many times, although matrix x may not change. Return of the cached 
-## value, instead of repeated calculation of the inverse, will save computation time. 
+## The use case for these functions is for tight loops and large matrices, where the 
+## value of inverse is calculated many times and the calculation may take a relatively 
+## long time, although matrix x may not change. Return of the cached value, instead 
+## of repeated calculation of the inverse, will save computation time. 
 ## If not using tight loops, then solve(x) is more appropriate.
 
 
